@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Shresth Bharat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .cart-table th {
+            background: #f9f9f9;
+            font-weight: 600;
+        }
+        .cart-item-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .cart-total {
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        .remove-btn {
+            color: #ff4d4d;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">
+                    <span><i class="fas fa-envelope"></i> support@shresthbharat.com</span>
+                    <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+                </div>
+                <div class="top-right">
+                    <div class="language-selector">
+                        <img src="img/language-en.jpg" alt="English"> English <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/intro-social-1.png" alt=""></a>
+                        <a href="#"><img src="img/intro-social-2.png" alt=""></a>
+                        <a href="#"><img src="img/intro-social-3.png" alt=""></a>
+                        <a href="#"><img src="img/intro-social-4.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Shresth Bharat"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('img/bg-breadcrumb.jpg'); padding: 100px 0; text-align: center; color: #fff; background-size: cover;">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Home / Cart</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" style="padding: 50px 0;">
+        <div class="container">
+            <div id="cart-content">
+                <!-- Cart items will be injected here -->
+            </div>
+            <div class="cart-total" id="cart-total">
+                <!-- Total will be injected here -->
+            </div>
+            <div style="text-align: right; margin-top: 20px;">
+                <a href="shop.html" class="btn" style="background: #333; margin-right: 10px;">Continue Shopping</a>
+                <a href="checkout.html" class="btn">Proceed to Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="" class="footer-logo">
+                    <p>We provide the best organic products for your health.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123, SG Highway, Ahmedabad, Gujarat, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@shresthbharat.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for latest updates.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shresth Bharat. All Rights Reserved.</p>
+                <img src="img/payment.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

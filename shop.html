@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Shresth Bharat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">
+                    <span><i class="fas fa-envelope"></i> support@shresthbharat.com</span>
+                    <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+                </div>
+                <div class="top-right">
+                    <div class="language-selector">
+                        <img src="img/language-en.jpg" alt="English"> English <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/intro-social-1.png" alt=""></a>
+                        <a href="#"><img src="img/intro-social-2.png" alt=""></a>
+                        <a href="#"><img src="img/intro-social-3.png" alt=""></a>
+                        <a href="#"><img src="img/intro-social-4.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Shresth Bharat"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html" class="active">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('img/bg-breadcrumb.jpg'); padding: 100px 0; text-align: center; color: #fff; background-size: cover;">
+        <div class="container">
+            <h1>Shop</h1>
+            <p>Home / Shop</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <!-- Search & Filter -->
+            <div class="shop-filters" style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <div class="filter-buttons">
+                    <button class="btn filter-btn active" data-filter="all" style="margin-right: 10px;">All</button>
+                    <button class="btn filter-btn" data-filter="fruit" style="margin-right: 10px;">Fruits</button>
+                    <button class="btn filter-btn" data-filter="vegetable">Vegetables</button>
+                </div>
+                <div class="search-box" style="position: relative;">
+                    <input type="text" id="shop-search" placeholder="Search products..." style="padding: 10px 40px 10px 15px; border: 1px solid #ddd; border-radius: 30px; width: 250px; outline: none;">
+                    <i class="fas fa-search" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: #666;"></i>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-id="1" data-name="Fresh Apple" data-price="150" data-category="fruit">
+                    <div class="product-img">
+                        <a href="product-details.html?id=1"><img src="img/product/1.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=1"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=1">Fresh Apple</a></h3>
+                        <div class="price">₹150.00</div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-id="2" data-name="Organic Banana" data-price="60" data-category="fruit">
+                    <div class="product-img">
+                        <a href="product-details.html?id=2"><img src="img/product/2.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=2"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=2">Organic Banana</a></h3>
+                        <div class="price">₹60.00</div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-id="3" data-name="Fresh Orange" data-price="100" data-category="fruit">
+                    <div class="product-img">
+                        <a href="product-details.html?id=3"><img src="img/product/3.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=3"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=3">Fresh Orange</a></h3>
+                        <div class="price">₹100.00</div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-id="4" data-name="Green Grapes" data-price="120" data-category="fruit">
+                    <div class="product-img">
+                        <a href="product-details.html?id=4"><img src="img/product/4.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=4"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=4">Green Grapes</a></h3>
+                        <div class="price">₹120.00</div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-id="5" data-name="Fresh Strawberry" data-price="200" data-category="fruit">
+                    <div class="product-img">
+                        <a href="product-details.html?id=5"><img src="img/product/5.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=5"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=5">Fresh Strawberry</a></h3>
+                        <div class="price">₹200.00</div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-id="6" data-name="Organic Tomato" data-price="40" data-category="vegetable">
+                    <div class="product-img">
+                        <a href="product-details.html?id=6"><img src="img/product/6.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=6"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=6">Organic Tomato</a></h3>
+                        <div class="price">₹40.00</div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-id="7" data-name="Fresh Broccoli" data-price="80" data-category="vegetable">
+                    <div class="product-img">
+                        <a href="product-details.html?id=7"><img src="img/product/7.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=7"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=7">Fresh Broccoli</a></h3>
+                        <div class="price">₹80.00</div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-id="8" data-name="Organic Carrot" data-price="50" data-category="vegetable">
+                    <div class="product-img">
+                        <a href="product-details.html?id=8"><img src="img/product/8.jpg" alt=""></a>
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="product-details.html?id=8"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product-details.html?id=8">Organic Carrot</a></h3>
+                        <div class="price">₹50.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="" class="footer-logo">
+                    <p>We provide the best organic products for your health.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123, SG Highway, Ahmedabad, Gujarat, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@shresthbharat.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for latest updates.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shresth Bharat. All Rights Reserved.</p>
+                <img src="img/payment.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
